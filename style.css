@@ -1,6 +1,11 @@
 /* Global */
 :root {
   /* Color */
+  --color-black: #191c1c;
+  --color-grey: #6f7977;
+  --color-light-grey: #dae5e2;
+  --color-bluegrey: #47617a;
+  --color-green: #006a63;
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
@@ -29,7 +34,6 @@
 body {
   font-family: 'Yeon Sung', cursive;
   margin: 0;
-  background-color: var(--color-light-white);
   font-size: var(--font-regular);
 }
 
@@ -38,4 +42,46 @@ ul {
   padding: 0;
 }
 
+h3 {
+  margin: 0;
+}
+
+/* Title */
+#title {
+  background-image: url(./images/title-background.png);
+  background-color: #63bfb6;
+  text-align: center;
+  font-size: var(--font-large);
+  color: var(--color-black);
+  padding: 10px;
+}
+
 /* Main */
+#main {
+  background-color: var(--color-light-grey);
+  width: 80%;
+  margin: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--color-grey);
+  border-radius: var(--size-border-radius);
+}
+
+#main span {
+  display: block;
+  text-align: center;
+}
+
+.main__help-btn {
+  font-size: var(--font-micro);
+  padding: 5px;
+  border: 1px solid var(--color-grey);
+  border-radius: 100%;
+}
+
+/* Rules */
+#rules {
+  background-color: lightgreen;
+}
