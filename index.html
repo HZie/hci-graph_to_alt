@@ -23,14 +23,14 @@
     <!-- Title -->
     <div id="title">Graph To AltText</div>
 
-    <!-- Main -->
-    <div id="main">
+    <!-- Main Upload-->
+    <div class="main-box main-upload inactive">
       <div class="help">
         <button class="main__help-btn">
           <i class="fas fa-question"></i>
         </button>
         <!-- Help -->
-        <div class="main__help-dialog open">
+        <div class="main__help-dialog inactive">
           <span>[사이트 사용법]</span>
           <ul>
             <li>그래프를 업로드한다. (png, jpg, jpeg 등)</li>
@@ -46,6 +46,80 @@
 
         <span class="main__drop-txt">DROP FILES HERE</span>
       </div>
+    </div>
+
+    <!-- Main Select Length-->
+    <div class="main-box main-select inactive">
+      <div class="help">
+        <button class="main__help-btn">
+          <i class="fas fa-question"></i>
+        </button>
+        <!-- Help -->
+        <div class="main__help-dialog inactive">
+          <span>[사이트 사용법]</span>
+          <ul>
+            <li>그래프를 업로드한다. (png, jpg, jpeg 등)</li>
+            <li>어느 길이의 설명을 만들지 선택한다.</li>
+            <li>만들어진 설명을 복사하여 원하는 곳에 사용한다.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-select__file">
+        <div class="main-select__file-item">
+          <i class="fas fa-chart-bar"></i>
+          <span>Title of File.jpg</span>
+        </div>
+        <button class="main-select__file-delete">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <span class="select-txt">Select the length of Alt Text</span>
+
+      <div class="main-select__buttons">
+        <button class="select-short">Short Only</button>
+        <button class="select-both">Short & Long</button>
+        <button class="select-long">Long Only</button>
+      </div>
+    </div>
+
+    <!-- Main Generated-->
+    <div class="main-box main-generated">
+      <div class="help">
+        <button class="main__help-btn">
+          <i class="fas fa-question"></i>
+        </button>
+        <!-- Help -->
+        <div class="main__help-dialog inactive">
+          <span>[사이트 사용법]</span>
+          <ul>
+            <li>그래프를 업로드한다. (png, jpg, jpeg 등)</li>
+            <li>어느 길이의 설명을 만들지 선택한다.</li>
+            <li>만들어진 설명을 복사하여 원하는 곳에 사용한다.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-select__file">
+        <div class="main-select__file-item">
+          <i class="fas fa-chart-bar"></i>
+          <span>Title of File.jpg</span>
+        </div>
+        <button class="main-select__file-delete">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="main-select__generated">
+        <div class="generated-txt">
+          <span>hidhaflidshfliasdfl;asdjfklasjd;</span>
+        </div>
+        <button class="generated-copy">
+          <i class="far fa-copy"></i>
+        </button>
+      </div>
+
+      <button class="main-select__startover">Start Over</button>
     </div>
 
     <!-- Rules -->

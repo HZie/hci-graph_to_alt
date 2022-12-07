@@ -24,7 +24,7 @@
   --weight-regular: 400;
 
   /* Size */
-  --size-border-radius: 4px;
+  --size-border-radius: 10px;
 
   /* Annimation */
   --animation-duration: 300ms;
@@ -60,6 +60,7 @@ h3 {
 }
 
 button {
+  font-family: 'Jua', sans-serif;
   background-color: var(--color-green);
   color: var(--color-white);
   padding: 0;
@@ -82,8 +83,9 @@ button:hover {
   padding: 10px;
 }
 
-/* Main */
-#main {
+/* Main Upload*/
+.main-box {
+  color: var(--color-green);
   width: 80%;
   margin: 50px;
   padding: 10px;
@@ -95,7 +97,7 @@ button:hover {
   border-radius: var(--size-border-radius);
 }
 
-#main span {
+.main-upload span {
   display: block;
   text-align: center;
 }
@@ -128,10 +130,6 @@ button:hover {
   border-radius: 10px;
 }
 
-.main__help-dialog.close {
-  display: none;
-}
-
 .main__help-dialog li {
   list-style: decimal inside;
 }
@@ -145,13 +143,89 @@ button:hover {
   border-radius: var(--size-border-radius);
 }
 
-.main__drop-box {
-  color: var(--color-green);
-}
-
 .main__drop-txt {
   font-size: 25px;
   margin: 10px;
+}
+
+/* Main select length*/
+.main-select__file {
+  margin: 15px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+}
+
+.main-select__file-item {
+  width: 90%;
+  font-size: var(--font-regular);
+  border: 2px solid var(--color-green);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.main-select__file-delete {
+  font-size: 10px;
+  margin: 10px;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.main-select__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.select-txt {
+  margin-top: 30px;
+}
+
+.main-select__buttons button {
+  margin: 20px;
+  font-size: var(--font-regular);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Main generate txt*/
+
+.main-select__generated {
+  margin: 15px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+}
+
+.generated-txt {
+  width: 90%;
+  font-size: var(--font-regular);
+  border: 2px solid var(--color-green);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.generated-copy {
+  font-size: 10px;
+  margin: 10px;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.main-select__startover {
+  font-size: var(--font-small);
+  padding: 5px;
+  border-radius: var(--size-border-radius);
+}
+
+.inactive {
+  display: none;
 }
 
 /* Rules */
