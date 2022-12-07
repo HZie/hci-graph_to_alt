@@ -80,7 +80,7 @@ button:hover {
   text-align: center;
   font-size: var(--font-large);
   color: var(--color-black);
-  padding: 10px;
+  padding: 50px;
 }
 
 /* Main Upload*/
