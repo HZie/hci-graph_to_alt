@@ -45,6 +45,11 @@ uploadBox.addEventListener('dragleave', (e) => {
   uploadBox.style.backgroundColor = 'white';
 });
 
+uploadBox.addEventListener('dragend', (e) => {
+  console.log('dragend');
+  uploadBox.style.backgroundColor = 'white';
+});
+
 uploadBox.addEventListener('drop', (e) => {
   e.preventDefault();
   console.log(e);
