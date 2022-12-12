@@ -1,11 +1,14 @@
 'use strict';
 
 /* Toggle Help */
-const helpBtn = document.querySelector('.main__help-btn');
-const helpDialog = document.querySelector('.main__help-dialog');
+const helpBtn = document.querySelectorAll('.main__help-btn');
+const helpDialog = document.querySelectorAll('.main__help-dialog');
+let i = 0;
 
-helpBtn.addEventListener('click', () => {
-  helpDialog.classList.toggle('inactive');
+helpBtn.forEach((b) => {
+  b.addEventListener('click', () => {
+    helpDialog[i++].classList.toggle('inactive');
+  });
 });
 
 /* Upload Graph */
