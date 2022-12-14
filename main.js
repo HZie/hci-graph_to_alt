@@ -7,7 +7,10 @@ let i = 0;
 
 helpBtn.forEach((b) => {
   b.addEventListener('click', () => {
-    helpDialog[i++].classList.toggle('inactive');
+    helpBtn.forEach((e) => {
+      e.classList.toggle('inactive');
+    });
+    //helpDialog[i++].classList.toggle('inactive');
   });
 });
 
